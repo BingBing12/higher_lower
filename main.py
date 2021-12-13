@@ -16,7 +16,7 @@ def play():
         print(vs)
         print(f"{influencer_two['name']}, a {influencer_two['description']} from {influencer_two['country']} \n")
 
-        choice = input(f"guess {influencer_one['name']} 'a' or {influencer_two['name']} 'b'").lower()
+        choice = input(f"Guess who has more followers: {influencer_one['name']} 'a' or {influencer_two['name']} 'b'").lower()
         if(choice=='a' and influencer_one["follower_count"]>influencer_two["follower_count"]):
             score +=1
             print(f"{influencer_one['name']} is correct, your score is {score}")
